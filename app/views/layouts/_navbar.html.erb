@@ -1,0 +1,31 @@
+<div class="bg-yellow-400 ">
+<div class="mx-auto flex items-center justify-between p-4 lg:flex-row md:flex-col row sm:flex-col xs:flex-col">
+  
+  <!-- Logo -->
+  <div class="flex items-start" class="w-0">
+    <img src="/images/maaloxscritta.png" class="w-28"/>
+  </div>
+
+  <!-- Menu Items -->
+  <div class="flex flex-wrap lg:flex-row md:flex-col row sm:flex-col xs:flex-col items-center justify-center space-x-6 text-lg font-medium">
+    <% @navbar.each do |item| %>
+      <div class="relative group hover:underline p-2">
+        <%= link_to item[:name], item[:href], class: "block" %>
+
+        <% if item[:submenu] %>
+          <div class="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded mt-2 z-10 min-w-[160px]">
+            <% item[:submenu].each do |sub| %>
+              <%= link_to sub[:name], sub[:href], class: "block px-4 py-2 hover:bg-gray-100" %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Earth Button -->
+  <div>
+    <img src="/images/earth.png" class="w-8"/>
+  </div>
+</div>
+</div>
