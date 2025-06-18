@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cognome: MyString
+  partenza: 2025-06-18
+  brasile: false
+  argentina: false
+  peru: false
+  colombia: false
+  cile: false
+  carrozzina: false
+
+two:
+  nome: MyString
+  cognome: MyString
+  partenza: 2025-06-18
+  brasile: false
+  argentina: false
+  peru: false
+  colombia: false
+  cile: false
+  carrozzina: false

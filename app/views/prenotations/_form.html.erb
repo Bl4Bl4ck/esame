@@ -1,0 +1,62 @@
+<%= form_with(model: prenotation, class: "contents") do |form| %>
+  <% if prenotation.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-md mt-3">
+      <h2><%= pluralize(prenotation.errors.count, "error") %> prohibited this prenotation from being saved:</h2>
+
+      <ul class="list-disc ml-6">
+        <% prenotation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:nome].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:nome].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :cognome %>
+    <%= form.text_field :cognome, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:cognome].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:cognome].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :partenza %>
+    <%= form.date_field :partenza, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:partenza].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:partenza].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :brasile %>
+    <%= form.checkbox :brasile, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:brasile].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:brasile].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :argentina %>
+    <%= form.checkbox :argentina, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:argentina].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:argentina].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :peru %>
+    <%= form.checkbox :peru, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:peru].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:peru].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :colombia %>
+    <%= form.checkbox :colombia, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:colombia].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:colombia].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :cile %>
+    <%= form.checkbox :cile, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:cile].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:cile].any?}] %>
+  </div>
+
+  <div class="my-5 flex items-center gap-2">
+    <%= form.label :carrozzina %>
+    <%= form.checkbox :carrozzina, class: ["block shadow-sm rounded-md border order-first h-5 w-5", {"border-gray-400 focus:outline-blue-600": prenotation.errors[:carrozzina].none?, "border-red-400 focus:outline-red-600": prenotation.errors[:carrozzina].any?}] %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
