@@ -12,7 +12,7 @@ class HomeController < ApplicationController
   },
   {
     name: 'Hotel',
-    href: '',
+    href: '/hotel',
 
   },
   {
@@ -230,5 +230,7 @@ def prenotations
     prezzo_cons: "69,90"
   }
 ] 
+end
+def hotel
 end
 end

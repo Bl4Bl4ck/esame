@@ -1,0 +1,167 @@
+        <div class="p-8">
+            <p class="text-5xl font-bold text-gray-700">Hotel in Brasile:</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire più dettagli sui vari hotel!</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @hotelbrasile.each do |item| %>
+    <div class="bg-gradient-to-b from-emerald-800 via-yellow-300 to-blue-900 rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-black text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-black">Prezzo consigliato € <%= item[:prezzo_cons] %></p>
+    </div>
+  <% end %>
+</div>
+
+</div>
+            <p class="text-5xl font-bold text-gray-700 mt-12">Hotel in Argentina:</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire più dettagli sui vari hotel!</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @hotelargentina.each do |item| %>
+    <div class="bg-gradient-to-b from-blue-200 via-yellow-50 to-blue-200 rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-black text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-black">Recensione: <%= item[:recensione]%></p>
+    </div>
+  <% end %>
+</div>
+
+</div>
+            <p class="text-5xl font-bold text-gray-700 mt-12">Hotel in Perù:</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire più dettagli sui vari hotel!</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @hotelcolombia.each do |item| %>
+    <div class="bg-gradient-to-r  from-red-700 via-white to-red-700 rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-black text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-black">Prezzo consigliato € <%= item[:prezzo_cons] %></p>
+    </div>
+  <% end %>
+</div>
+
+</div>
+            <p class="text-5xl font-bold text-gray-700 mt-12">Hotel in Colombia:</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire più dettagli sui vari hotel!</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @hotelperu.each do |item| %>
+    <div class="bg-gradient-to-b from-yellow-400 via-red-700 to-blue-900 rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-black text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-black">Recensione: <%= item[:recensione]%></p>
+    </div>
+  <% end %>
+</div>
+
+</div>
+            <p class="text-5xl font-bold text-gray-700 mt-12">Hotel in Cile:</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire più dettagli sui vari hotel!</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @hotelcile.each do |item| %>
+    <div class="bg-gradient-to-br from-blue-600 via-red-100 to-red-600 rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-black text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-black">Recensione: <%= item[:recensione]%></p>
+    </div>
+  <% end %>
+</div>
+
+</div>
+</div>

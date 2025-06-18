@@ -42,7 +42,7 @@
     <%= link_to "Nuova prenotazione", new_prenotation_path, class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white block font-medium" %>
   </div>
 
-  <div id="prenotations" class="min-w-full divide-y divide-gray-200 space-y-5">
+  <div id="prenotations" class="min-w-full divide-y divide-gray-200 space-y-5 ">
     <% if @prenotations.any? %>
       <% @prenotations.each do |prenotation| %>
         <div class="flex flex-col sm:flex-row justify-between items-center pb-5 sm:pb-0">
@@ -59,7 +59,6 @@
     <% end %>
   </div>
 </div>
-
 <div class="">
   <div class="mt-8 text-center text-gray-400">
     <%#  Aggiungi qui le informazioni sul copyright, i link ai social media, ecc. %>
@@ -74,7 +73,7 @@
                     <p class="text-5xl  font-bold text-black">Newsletter</p>
                             <input
         placeholder="Inserisci la tua mail"
-        class="lg:w-108 md:w-auto sm:w-auto xs:w-auto shadow-sm mt-0 border-black p-2 opacity-70 lg:mt-4 md:mt-4 sm:mt-4 border-2"
+        class="lg:w-108 md:w-auto sm:w-auto xs:w-auto shadow-sm mt-0 border-black text-black p-2 opacity-70 lg:mt-4 md:mt-4 sm:mt-4 border-2"
         
         />
         <p class="text-sm  underline text-end mt-3 text-black">Leggi l'informativa</p>
