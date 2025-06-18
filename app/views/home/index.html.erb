@@ -1,0 +1,19 @@
+    <%= render partial: "layouts/navbar"%>
+        <div class="mt-6">
+    <%= render partial: "components/banner"%>
+    </div>
+<div class="mt-6">
+    <%= render partial: "/components/promo"%>
+    </div>
+    <div class="mt-6">
+  <%= render partial: "/components/tendenza"%>
+    </div>
+    <div class="mt-6">
+    <%= render partial: "/components/testo"%>
+    </div>
+    <div class="mt-6">
+  <%= render partial: "/components/features"%>
+    </div>
+          <%= yield %>
+
+      <%= render partial: "layouts/footer"%>
