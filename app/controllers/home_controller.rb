@@ -128,7 +128,7 @@ def prenotations
   },
   {
     name: 'Hotel',
-    href: '',
+    href: '/hotel',
 
   },
   {

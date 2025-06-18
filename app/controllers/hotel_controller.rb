@@ -47,105 +47,80 @@ class HotelController < ApplicationController
     prezzo: "147,00 a notte" ,
     recensione: "Eccellente!"
   },
-  {
-    
-    img: "Redentore.jpg",
-    nome: "Visita al Cristo Redentore",
-    prezzo: "39,99",
-    prezzo_cons: "69,90"
-  }
 ]
         @hotelargentina = [
   {
     
-    img: "carnevale.jpg",
-    nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
-    prezzo: "467,00",
-    prezzo_cons: "549,90"
+    img: "palacehotel (1).jpg",
+    nome: "Alvear Palace Hotel",
+    prezzo: "445,00",
+    recensione: "Eccellente!"
   },
   {
     
-    img: "temaiken.jpg",
-    nome: "Parco Naturale di Temaiken",
-    prezzo: "99,00",
-    prezzo_cons: "149,90"
+    img: "duhau (1).jpg",
+    nome: "Palacio Duhau",
+    prezzo: "599,00",
+    recensione: "Eccellente!"
   },
   {
     
-    img: "Redentore.jpg",
-    nome: "Visita al Cristo Redentore",
-    prezzo: "39,99",
-    prezzo_cons: "69,90"
+    img: "granresort (1).jpg",
+    nome: "Iguazù Gran Resort",
+    prezzo: "239,99",
+    recensione: "Favoloso!"
   }
 ]
         @hotelperu = [
   {
     
-    img: "carnevale.jpg",
-    nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
-    prezzo: "467,00",
-    prezzo_cons: "549,90"
+    img: "inka (1).jpg",
+    nome: "Tambo de Inka",
+    prezzo: "187,00",
+    recensione: "Favoloso!"
   },
   {
     
-    img: "temaiken.jpg",
-    nome: "Parco Naturale di Temaiken",
-    prezzo: "99,00",
-    prezzo_cons: "149,90"
+    img: "miraflorespark (1).jpg",
+    nome: "Belmond Miraflores Park",
+    prezzo: "299,00",
+    recensione: "Eccellente!"
   },
-  {
+    {
     
-    img: "Redentore.jpg",
-    nome: "Visita al Cristo Redentore",
-    prezzo: "39,99",
-    prezzo_cons: "69,90"
-  }
+    img: "incayucay (1).jpg",
+    nome: "Sonesta Posadas Inca Yucay",
+    prezzo: "199,00",
+    recensione: "Buonissimo!"
+  },
+
 ]
         @hotelcolombia = [
   {
     
-    img: "carnevale.jpg",
-    nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
-    prezzo: "467,00",
-    prezzo_cons: "549,90"
+    img: "fourseasons (1).jpg",
+    nome: "Four Season Hotel Bogotà",
+    prezzo: "367,00",
+    recensione: "Eccellente!"
   },
   {
     
-    img: "temaiken.jpg",
-    nome: "Parco Naturale di Temaiken",
+    img: "laopera (1).jpg",
+    nome: "L'Hotel de la Opera",
     prezzo: "99,00",
-    prezzo_cons: "149,90"
+    recensione: "Buono!"
   },
-  {
-    
-    img: "Redentore.jpg",
-    nome: "Visita al Cristo Redentore",
-    prezzo: "39,99",
-    prezzo_cons: "69,90"
-  }
+
 ]
         @hotelcile = [
   {
     
-    img: "carnevale.jpg",
-    nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
-    prezzo: "467,00",
-    prezzo_cons: "549,90"
+    img: "santiago.jpg",
+    nome: "The Singular Santiago",
+    prezzo: "200,00",
+    recensione: "Favloso!"
   },
-  {
-    
-    img: "temaiken.jpg",
-    nome: "Parco Naturale di Temaiken",
-    prezzo: "99,00",
-    prezzo_cons: "149,90"
-  },
-  {
-    
-    img: "Redentore.jpg",
-    nome: "Visita al Cristo Redentore",
-    prezzo: "39,99",
-    prezzo_cons: "69,90"
-  }
+
 ]
 end
 end

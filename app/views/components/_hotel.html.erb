@@ -19,7 +19,7 @@
       <!-- Prezzo + pulsante -->
       <div class="flex flex-row mt-3 items-center">
         <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
-          Ora
+         Prenota ora
           <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
         </button>
         <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
@@ -52,7 +52,7 @@
       <!-- Prezzo + pulsante -->
       <div class="flex flex-row mt-3 items-center">
         <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
-          Ora
+          Prenota ora
           <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
         </button>
         <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
@@ -70,7 +70,7 @@
             <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
 
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-  <% @hotelcolombia.each do |item| %>
+  <% @hotelperu.each do |item| %>
     <div class="bg-gradient-to-r  from-red-700 via-white to-red-700 rounded-2xl p-4 shadow-xl space-y-4">
       <!-- Scadenza -->
       <div class="flex justify-center text-sm">
@@ -85,14 +85,14 @@
       <!-- Prezzo + pulsante -->
       <div class="flex flex-row mt-3 items-center">
         <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
-          Ora
+          Prenota ora
           <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
         </button>
         <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
       </div>
 
       <!-- Prezzo consigliato -->
-      <p class="text-sm mt-2 text-black">Prezzo consigliato € <%= item[:prezzo_cons] %></p>
+      <p class="text-sm mt-2 text-black">Recensione:  <%= item[:recensione] %></p>
     </div>
   <% end %>
 </div>
@@ -103,8 +103,8 @@
             <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
 
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-  <% @hotelperu.each do |item| %>
-    <div class="bg-gradient-to-b from-yellow-400 via-red-700 to-blue-900 rounded-2xl p-4 shadow-xl space-y-4">
+  <% @hotelcolombia.each do |item| %>
+    <div class="bg-gradient-to-b from-yellow-400 via-blue-700 to-red-700 rounded-2xl p-4 shadow-xl space-y-4">
       <!-- Scadenza -->
       <div class="flex justify-center text-sm">
       </div>
@@ -118,7 +118,7 @@
       <!-- Prezzo + pulsante -->
       <div class="flex flex-row mt-3 items-center">
         <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
-          Ora
+          Prenota ora
           <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
         </button>
         <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
@@ -137,7 +137,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
   <% @hotelcile.each do |item| %>
-    <div class="bg-gradient-to-br from-blue-600 via-red-100 to-red-600 rounded-2xl p-4 shadow-xl space-y-4">
+    <div class="bg-gradient-to-br from-blue-600 via-white to-red-600 rounded-2xl p-4 shadow-xl space-y-4">
       <!-- Scadenza -->
       <div class="flex justify-center text-sm">
       </div>
@@ -151,7 +151,7 @@
       <!-- Prezzo + pulsante -->
       <div class="flex flex-row mt-3 items-center">
         <button class="bg-yellow-400 flex items-center text-black font-semibold text-lg px-6 py-1 rounded-3xl">
-          Ora
+          Prenota ora
           <%= image_tag "/images/world.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
         </button>
         <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
