@@ -175,8 +175,8 @@ def prenotations
     
             "Itinerari",
             "Garanzie",
-            "MEdical Center Quellenhof",
-            "Lavorare al Quellenhof",
+            "Viaggi",
+            "Novità",
             "Immagini",
             "Webcam"   
   ]
