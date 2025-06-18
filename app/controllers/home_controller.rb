@@ -3,32 +3,51 @@ class HomeController < ApplicationController
         @navbar = [
   {
     name: 'Home',
-    href: '/'
+    href: '/home'
   },
   {
-    name: 'Prodotti',
-    href: '/prodotto',
+    name: 'Voli',
+    href: '',
     submenu: [
-      { name: 'Antiacidi', href: '/prodotto/antiacidi' },
-      { name: 'Digestivi', href: '/prodotto/digestivi' },
-      { name: 'Altro', href: '/prodotto/altro' }
+      { name: 'Brasile', href: '/prodotto/antiacidi' },
+      { name: 'Argentina', href: '/prodotto/digestivi' },
+      { name: 'Perù', href: '/prodotto/antiacidi' },
+      { name: 'Colombia', href: '/prodotto/digestivi' },
+      { name: 'Cile', href: '/prodotto/altro' }
     ]
   },
   {
-    name: 'Lo Stomaco',
-    href: '/lo-stomaco',
+    name: 'Hotel',
+    href: '',
     submenu: [
-      { name: 'Acidità', href: '/lo-stomaco/acidita' },
-      { name: 'Bruciore', href: '/lo-stomaco/bruciore' }
+      { name: 'Brasile', href: '/prodotto/antiacidi' },
+      { name: 'Argentina', href: '/prodotto/digestivi' },
+      { name: 'Perù', href: '/prodotto/antiacidi' },
+      { name: 'Colombia', href: '/prodotto/digestivi' },
+      { name: 'Cile', href: '/prodotto/altro' }
     ]
   },
   {
-    name: 'Trova il prodotto per te',
-    href: '/trova-il-prodotto-per-te'
+    name: 'Attrazioni',
+    href: '',
+        submenu: [
+      { name: 'Brasile', href: '/prodotto/antiacidi' },
+      { name: 'Argentina', href: '/prodotto/digestivi' },
+      { name: 'Perù', href: '/prodotto/antiacidi' },
+      { name: 'Colombia', href: '/prodotto/digestivi' },
+      { name: 'Cile', href: '/prodotto/altro' }
+    ]
   },
   {
-    name: 'Acquista Maalox Ridu RAPID',
-    href: '/acquista-maalox-ridu-rapid'
+    name: 'Noleggia un veicolo',
+    href: '',
+        submenu: [
+      { name: 'Brasile', href: '/prodotto/antiacidi' },
+      { name: 'Argentina', href: '/prodotto/digestivi' },
+      { name: 'Perù', href: '/prodotto/antiacidi' },
+      { name: 'Colombia', href: '/prodotto/digestivi' },
+      { name: 'Cile', href: '/prodotto/altro' }
+    ]
   }
 ]
 end
