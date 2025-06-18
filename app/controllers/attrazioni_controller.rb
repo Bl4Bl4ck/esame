@@ -33,60 +33,47 @@ class AttrazioniController < ApplicationController
   },
   {
     
-    img: "granresort (1).jpg",
-    nome: "Iguazù Gran Resort",
-    prezzo: "239,99",
-    recensione: "Favoloso!"
+    img: "santarosa (1).jpg",
+    nome: "Santa Rosa a la Pampa",
+    prezzo: "0",
+    recensione: "Buono!"
   }
 ]
         @hotelperu = [
   {
     
-    img: "inka (1).jpg",
-    nome: "Tambo de Inka",
-    prezzo: "187,00",
+    img: "ollantayambo.jpg",
+    nome: "Ollantayatambo",
+    prezzo: "0",
     recensione: "Favoloso!"
   },
   {
     
-    img: "miraflorespark (1).jpg",
-    nome: "Belmond Miraflores Park",
-    prezzo: "299,00",
-    recensione: "Eccellente!"
-  },
-    {
-    
-    img: "incayucay (1).jpg",
-    nome: "Sonesta Posadas Inca Yucay",
-    prezzo: "199,00",
-    recensione: "Buonissimo!"
+    img: "parcoamor.jpg",
+    nome: "Parco del Amor",
+    prezzo: "0",
+    recensione: "Favoloso!"
   },
 
 ]
         @hotelcolombia = [
   {
     
-    img: "fourseasons (1).jpg",
-    nome: "Four Season Hotel Bogotà",
-    prezzo: "367,00",
+    img: "bogota.jpg",
+    nome: "Bogotà",
+    prezzo: "0",
     recensione: "Eccellente!"
   },
-  {
-    
-    img: "laopera (1).jpg",
-    nome: "L'Hotel de la Opera",
-    prezzo: "99,00",
-    recensione: "Buono!"
-  },
+
 
 ]
         @hotelcile = [
   {
     
-    img: "santiago.jpg",
-    nome: "The Singular Santiago",
-    prezzo: "200,00",
-    recensione: "Favloso!"
+    img: "museomemo.jpg",
+    nome: "Museo della Memoria",
+    prezzo: "20,00",
+    recensione: "Favoloso!"
   },
 
 ]
