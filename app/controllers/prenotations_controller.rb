@@ -16,12 +16,12 @@ class PrenotationsController < ApplicationController
   },
   {
     name: 'Hotel',
-    href: '',
+    href: '/hotel',
 
   },
   {
-    name: 'Prenota biglietti',
-    href: '',
+    name: 'Attrazioni',
+    href: '/attrazioni',
 
   },
   {
@@ -62,10 +62,7 @@ class PrenotationsController < ApplicationController
     
             "Itinerari",
             "Garanzie",
-            "MEdical Center Quellenhof",
-            "Lavorare al Quellenhof",
-            "Immagini",
-            "Webcam"   
+
   ]
 },
 {

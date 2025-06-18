@@ -16,7 +16,7 @@ class HomeController < ApplicationController
 
   },
   {
-    name: 'Prenota biglietti',
+    name: 'Attrazioni',
     href: '',
 
   },
@@ -59,10 +59,7 @@ class HomeController < ApplicationController
     
             "Itinerari",
             "Garanzie",
-            "MEdical Center Quellenhof",
-            "Lavorare al Quellenhof",
-            "Immagini",
-            "Webcam"   
+
   ]
 },
 {
@@ -132,8 +129,8 @@ def prenotations
 
   },
   {
-    name: 'Prenota biglietti',
-    href: '',
+    name: 'Attrazioni',
+    href: '/attrazioni',
 
   },
   {
@@ -175,10 +172,6 @@ def prenotations
     
             "Itinerari",
             "Garanzie",
-            "Viaggi",
-            "Novità",
-            "Immagini",
-            "Webcam"   
   ]
 },
 {
@@ -193,7 +186,7 @@ def prenotations
  titolo: "Recensioni",
  items: [
             
-            "92% di 100%",
+            "96% di 100%",
             "più di 100.000 recensioni",
         ]
 },
@@ -209,21 +202,21 @@ def prenotations
 
 @promo = [
   {
-    scadenza: "12h 14m 23s",
+    scadenza: " 4g 12h 14m 23s",
     img: "carnevale.jpg",
     nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
     prezzo: "467,00",
     prezzo_cons: "549,90"
   },
   {
-    scadenza: "12h 14m 23s",
+    scadenza: "4g 12h 14m 23s",
     img: "temaiken.jpg",
     nome: "Parco Naturale di Temaiken",
     prezzo: "99,00",
     prezzo_cons: "149,90"
   },
   {
-    scadenza: "12h 14m 23s",
+    scadenza: "4g 12h 14m 23s",
     img: "Redentore.jpg",
     nome: "Visita al Cristo Redentore",
     prezzo: "39,99",

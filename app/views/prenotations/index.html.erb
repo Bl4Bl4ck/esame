@@ -1,35 +1,16 @@
 <div class="bg-blue-200 ">
-<div class="mx-auto flex items-center justify-between p-4 lg:flex-row md:flex-col sm:flex-col xs:flex-col ">
+<div class="mx-auto flex items-center justify-between p-0 lg:flex-row md:flex-col sm:flex-col xs:flex-col mb-6 ">
   
   <!-- Logo -->
-  <div class="flex items-start" class="w-0">
-    <img src="/images/world.png" class="w-12"/>
-  </div>
 
   <!-- Menu Items -->
-  <div class="flex flex-wrap lg:flex-row md:flex-col  sm:flex-col xs:flex-col items-center justify-center space-x-6 text-lg font-medium">
-    <% @navbar.each do |item| %>
-      <div class="relative group hover:underline p-2">
-        <%= link_to item[:name], item[:href], class: "block" %>
 
-        <% if item[:submenu] %>
-          <div class="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded mt-2 z-10 min-w-[160px]">
-            <% item[:submenu].each do |sub| %>
-              <%= link_to sub[:name], sub[:href], class: "block px-4 py-2 hover:bg-gray-100" %>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
 
   <!-- Earth Button -->
-  <div>
-    <img src="/images/user.png" class="w-10"/>
-  </div>
+
 </div>
 </div>
-        <div class="relative flex flex-col bg-gray-100  rounded-2xl md:space-y-0 md:m-0 p-">
+        <div class="relative flex flex-col bg-gray-100  rounded-2xl md:space-y-0 md:m-0 ">
 
         <img
             src="images/hotell.jpg"
@@ -82,64 +63,7 @@
   <div class="mt-8 text-center text-gray-400 ">
     <%#  Aggiungi qui le informazioni sul copyright, i link ai social media, ecc. %>
     
-        <div class="relative flex flex-col shadow-2xl md:m-0 items-center justify-center bg-blue-200">
-            <div class="flex lg:flex-row sm:flex-col md:flex-col xs:flex-col gap-12 mb-6">
-                
-                
-        
-                
-                                <div class="flex flex-col"> 
-                    <p class="text-5xl  font-bold text-black">Newsletter</p>
-                            <input
-        placeholder="Inserisci la tua mail"
-        class="lg:w-108 md:w-auto sm:w-auto xs:w-auto shadow-sm mt-0 border-black text-black p-2 opacity-70 lg:mt-4 md:mt-4 sm:mt-4 border-2"
-        
-        />
-        <p class="text-sm  underline text-end mt-3 text-black">Leggi l'informativa</p>
-                </div>
-                                <div class="flex flex-col "> 
-                    <p class="text-5xl  font-bold text-black">Social</p>
-                    <div class="flex flex-row gap-4 mt-4">
-
-  <% @social.each do |button| %>
-    <button class="md:w-auto flex flex-row px-2 p-2 items-center text-center border-gray-500 text-xl  
-      bg-blue-100 shadow-sm hover:underline transition rounded-full
-      hover:-translate-y-0.5 duration-500">
-      <%= image_tag "#{button[:icon]}", class: "w-14 p-2", alt: "#{button[:name].capitalize} icon" %>
-    </button>
-  <% end %>
-
-                    </div>
-                </div>
-            </div>
-<div class="bg-blue-200 w-full">
-<p class="text-sm text-gray-400 mb-2 text-center p-5">
-</p>
-
-<div className="flex lg:flex-row md:flex-row sm:flex-col  w-full justify-center p-4">
 
 
-
-
-
-
-
-<footer class="p-6 lg:ml-24 text-start">
-  <div class="container mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 gap-8 ">
-    <% @footer.each do |colonna| %>
-      <div>
-        <h3 class="text-lg font-semibold mb-4 text-black"><%= colonna[:titolo] %></h3>
-        <ul>
-          <% colonna[:items].each do |item| %>
-            <li class="mb-2">
-              <a href="#" class=" hover:underline text-black"><%= item %></a>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-  </div>
-</div>
-</div>
 </div>
 </div>
