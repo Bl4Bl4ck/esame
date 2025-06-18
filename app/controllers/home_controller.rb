@@ -24,6 +24,11 @@ class HomeController < ApplicationController
     name: 'Noleggia un veicolo',
     href: '',
 
+  },
+    {
+    name: 'Prenota',
+    href: '',
+
   }
 ]
 
