@@ -1,0 +1,36 @@
+        <div class="p-8">
+            <p class="text-5xl font-bold text-gray-700">Da non perdere!</p>
+            <p class="text-md mt-8"><a class="font-semibold underline">Clicca qui </a>per scoprire tutti i prodotti</p>
+            <div class="flex lg:flex-row md: flex-row sm:flex-col xs:flex-col justify-center mt-8 gap-24">
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+  <% @promo.each do |item| %>
+    <div class="bg-white rounded-2xl p-4 shadow-xl space-y-4">
+      <!-- Scadenza -->
+      <div class="flex justify-center text-sm">
+        <p class="font-semibold mr-1">Scade tra:</p>
+        <p class="text-orange-400 font-semibold"><%= item[:scadenza] %></p>
+      </div>
+
+      <!-- Immagine -->
+      <%= image_tag "/images/#{item[:img]}", class: "w-full md:w-[480px] rounded-2xl shadow-lg mx-auto", alt: item[:nome] %>
+
+      <!-- Nome -->
+      <p class="font-semibold text-lg mt-3"><%= item[:nome].html_safe %></p>
+
+      <!-- Prezzo + pulsante -->
+      <div class="flex flex-row mt-3 items-center">
+        <button class="bg-orange-400 flex items-center text-white font-semibold text-lg px-6 py-1 rounded-3xl">
+          Ora
+          <%= image_tag "/images/unieurologoo.png", class: "w-8 rounded-full ml-2", alt: "Unieuro Logo" %>
+        </button>
+        <p class="font-bold text-lg ml-6">€ <%= item[:prezzo] %></p>
+      </div>
+
+      <!-- Prezzo consigliato -->
+      <p class="text-sm mt-2 text-gray-600">Prezzo consigliato € <%= item[:prezzo_cons] %></p>
+    </div>
+  <% end %>
+</div>
+</div>
+</div>

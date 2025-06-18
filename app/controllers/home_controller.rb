@@ -85,5 +85,29 @@ class HomeController < ApplicationController
   { name: "tiktok", icon: "/images/tiktok.png" },
   { name: "twitter", icon: "/images/twitter.png" }
 ]
+
+@promo = [
+  {
+    scadenza: "12h 14m 23s",
+    img: "frigorifero.jpg",
+    nome: "Hotpoint Ariston Frigorifero combinato HAT70I 932 S DC",
+    prezzo: "467,00",
+    prezzo_cons: "879,90"
+  },
+  {
+    scadenza: "12h 14m 23s",
+    img: "portatile.jpg",
+    nome: "HP 15s-eq3087sl Notebook AMD Ryzen 7 7730U 15.6” Full HD",
+    prezzo: "1099,00",
+    prezzo_cons: "1499,90"
+  },
+  {
+    scadenza: "12h 14m 23s",
+    img: "cellulare.jpg",
+    nome: "TIM OPPO A58 6.72'' Android 13 - 128 GB - 5000 mAh",
+    prezzo: "139,99",
+    prezzo_cons: "249,90"
+  }
+] 
 end
 end
