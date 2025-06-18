@@ -89,24 +89,24 @@ class HomeController < ApplicationController
 @promo = [
   {
     scadenza: "12h 14m 23s",
-    img: "frigorifero.jpg",
-    nome: "Hotpoint Ariston Frigorifero combinato HAT70I 932 S DC",
+    img: "carnevale.jpg",
+    nome: "Biglietto per il Carnevale a Rio: Pacchetto VIP",
     prezzo: "467,00",
-    prezzo_cons: "879,90"
+    prezzo_cons: "549,90"
   },
   {
     scadenza: "12h 14m 23s",
-    img: "portatile.jpg",
-    nome: "HP 15s-eq3087sl Notebook AMD Ryzen 7 7730U 15.6” Full HD",
-    prezzo: "1099,00",
-    prezzo_cons: "1499,90"
+    img: "temaiken.jpg",
+    nome: "Parco Naturale di Temaiken",
+    prezzo: "99,00",
+    prezzo_cons: "149,90"
   },
   {
     scadenza: "12h 14m 23s",
-    img: "cellulare.jpg",
-    nome: "TIM OPPO A58 6.72'' Android 13 - 128 GB - 5000 mAh",
-    prezzo: "139,99",
-    prezzo_cons: "249,90"
+    img: "Redentore.jpg",
+    nome: "Visita al Cristo Redentore",
+    prezzo: "39,99",
+    prezzo_cons: "69,90"
   }
 ] 
 end
