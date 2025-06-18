@@ -1,13 +1,13 @@
-<div class="bg-yellow-400 ">
+<div class="bg-blue-200 ">
 <div class="mx-auto flex items-center justify-between p-4 lg:flex-row md:flex-col row sm:flex-col xs:flex-col">
   
   <!-- Logo -->
   <div class="flex items-start" class="w-0">
-    <img src="/images/maaloxscritta.png" class="w-28"/>
+    <img src="/images/world.png" class="w-12"/>
   </div>
 
   <!-- Menu Items -->
-  <div class="flex flex-wrap lg:flex-row md:flex-col row sm:flex-col xs:flex-col items-center justify-center space-x-6 text-lg font-medium">
+  <div class="flex flex-wrap lg:flex-row md:flex-col row  sm:flex-col xs:flex-col items-center justify-center space-x-6 text-lg font-medium">
     <% @navbar.each do |item| %>
       <div class="relative group hover:underline p-2">
         <%= link_to item[:name], item[:href], class: "block" %>
@@ -24,8 +24,8 @@
   </div>
 
   <!-- Earth Button -->
-  <div>
-    <img src="/images/earth.png" class="w-8"/>
+  <div class="">
+    <img src="/images/user.png" class="w-10"/>
   </div>
 </div>
 </div>
